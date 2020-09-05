@@ -1,1 +1,2 @@
-# ikbo-01-19 Tumanov Nikita
+# ikbo-01-19
+# Туманов Никита
