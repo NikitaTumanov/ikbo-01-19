@@ -2,42 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="053448c4-e597-454e-b50e-8924464266a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/pract02-Tumanov.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/src/ru/mirea/pract02/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/src/ru/mirea/pract02/Ball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/src/ru/mirea/pract02/TestAuthor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/src/ru/mirea/pract02/TestBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/out/production/лаба1/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/out/production/лаба1/ru/mirea/lab01/WorkClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/src/ru/mirea/lab01/WorkClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab01-Tumanov/лаба1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/out/production/джава/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/out/production/джава/ru/mirea/lab1/Ball.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/out/production/джава/ru/mirea/lab1/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/out/production/джава/ru/mirea/lab1/Dog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/out/production/джава/ru/mirea/lab1/TestClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/src/ru/mirea/lab1/Ball.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/src/ru/mirea/lab1/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/src/ru/mirea/lab1/Dog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/src/ru/mirea/lab1/TestClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pract01-Tumanov/джава.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prictice/pract03-Tumanov/src/ru/mirea/prac03/number4/Movable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prictice/pract03-Tumanov/src/ru/mirea/prac03/number4/MovableCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../prictice/pract03-Tumanov/src/ru/mirea/prac03/number4/MovablePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/src/ru/mirea/pract02/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/src/ru/mirea/pract02/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/src/ru/mirea/pract02/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../prictice/pract02-Tumanov/src/ru/mirea/pract02/Ball.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +27,7 @@
   <component name="ProjectId" id="1h5cn0k202BLuhyrNX2fqaLYP6A" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../prictice/pract03-Tumanov" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
