@@ -2,7 +2,6 @@ package ru.mirea.pract06;
 
 public class SortingStudentsByGPA implements Comparator {
     public void main() {
-        System.out.println("Введите 7 студентов");
         Students[] students = new Students [6];
         input(students);
         quickSort(students);
@@ -19,7 +18,7 @@ public class SortingStudentsByGPA implements Comparator {
     }
 
     public static void output(Students[] students){
-        for(int i=0; i<6;i++){
+        for(int i=5; i>=0;i--){
             System.out.println("Имя студента:"+students[i].name+" Оценка: "+students[i].mark);
         }
     }
