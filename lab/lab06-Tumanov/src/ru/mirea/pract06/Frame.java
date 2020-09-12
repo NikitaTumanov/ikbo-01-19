@@ -9,7 +9,7 @@ public class Frame {
 
     public static void createGUI() {
         JFrame.setDefaultLookAndFeelDecorated(true);
-        JFrame frame = new JFrame("Frame");
+        JFrame frame = new JFrame("Вариант заданий: 2");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel panel = new JPanel();
