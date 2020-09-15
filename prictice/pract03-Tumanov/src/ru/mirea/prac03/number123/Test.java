@@ -21,7 +21,7 @@ public class Test {
         System.out.println(c1.isFilled()); // Метод вызывается из класса Shape
         System.out.println(c1.getRadius()); // Метод вызывается из класса Circle
 
-        //Shape s2 = new Shape(); Нельзя создать экземпляр абстрактного класса Shape
+        //Shape s2 = new Shape(); Нельзя создать объект абстрактного класса Shape
 
         System.out.println("-------------Проверка № 3--------------");
         Shape s3 = new Rectangle(1.0, 2.0, "RED", false); // Upcast
