@@ -3,15 +3,15 @@ package com.company;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class OrderManager implements Order {
-    private MyLinkedList<Item> data;
+public class OrderManager implements Order{
+    private MyList<Item> data;
 
     public OrderManager() {
-        this.data = new MyLinkedList<>();
+        this.data = new MyList();
     }
 
     public OrderManager(Collection<Item> collection) {
-        this.data = new MyLinkedList<>(collection);
+        this.data = new MyList<>(collection);
     }
 
     @Override
@@ -20,10 +20,10 @@ public class OrderManager implements Order {
     }
 
     @Override
-    public boolean delete(String name) {
+    public boolean remove(String itemName) {
         Item item = Arrays.stream(
                 data.toArray())
-                .filter(i -> i.getName().equals(name))
+                .filter(i -> i.getName().equals(itemName))
                 .findFirst()
                 .orElse(null);
         if (item == null)
@@ -32,13 +32,29 @@ public class OrderManager implements Order {
     }
 
     @Override
-    public int deleteAll(String name) {
+    public boolean remove(Item item) {
+        return data.remove(item);
+    }
+
+    @Override
+    public int removall(String itemName) {
         return (int) Arrays.stream(
                 data.toArray())
-                .filter(i -> i.getName().equals(name))
+                .filter(i -> i.getName().equals(itemName))
                 .map(el -> data.remove(el))
                 .count();
     }
+
+    @Override
+    public int removall(Item item) {
+        return (int) Arrays.stream(
+                data.toArray())
+                .filter(i -> i.equals(item))
+                .map(el -> data.remove(el))
+                .count();
+    }
+
+
 
     @Override
     public int numOfOrders() {
@@ -46,31 +62,39 @@ public class OrderManager implements Order {
     }
 
     @Override
-    public Object[] getArray() {
+    public Item[] getArray() {
         return data.toArray();
     }
-
     @Override
-    public double getSumPrice() {
+    public int costTotal() {
         return (int) Arrays.stream(
                 data.toArray())
                 .mapToDouble(Item::getPrice)
                 .sum();
     }
-
     @Override
-    public Object[] getArrayOfNames() {
-        return  Arrays.stream(
-                data.toArray())
-                .map(Item::getName)
-                .toArray();
+    public  String[] itemsNames() {
+        return  data.getNames();
     }
 
     @Override
-    public Object[] getSortedArray() {
-        return Arrays.stream(
-                data.toArray())
-                .sorted((o1, o2) -> (int) (o2.getPrice() - o1.getPrice()))
-                .toArray();
+    public int itemsQuantity() {
+        return 0;
+    }
+    @Override
+    public int itemsQuantity(String itemName) {
+        return 0;
+    }
+    @Override
+    public int itemsQuantity(Item item) {
+        return 0;
+    }
+    @Override
+    public Item[] getItems() {
+        return (Item[]) data.toArray();
+    }
+    @Override
+    public Object[] sortedItemsByCostDesc() {
+        return  Arrays.stream(data.toArray()).sorted((o1, o2) -> (int) (o2.getPrice() - o1.getPrice())).toArray();
     }
 }

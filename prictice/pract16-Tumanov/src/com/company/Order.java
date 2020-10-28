@@ -2,11 +2,17 @@ package com.company;
 
 public interface Order {
     boolean add(Item item);
-    boolean delete(String name);
-    int deleteAll(String name);
+    boolean remove(String itemName);
+    boolean remove(Item item);
+    int removall(String itemName);
+    int removall(Item item);
     int numOfOrders();
-    Object[] getArray();
-    double getSumPrice();
-    Object[] getArrayOfNames();
-    Object[] getSortedArray();
+    Item[] getArray();
+    int costTotal();
+    String[]  itemsNames();
+    int itemsQuantity();
+    int itemsQuantity(String itemName);
+    int itemsQuantity(Item item);
+    Item[] getItems();
+    Object[] sortedItemsByCostDesc();
 }

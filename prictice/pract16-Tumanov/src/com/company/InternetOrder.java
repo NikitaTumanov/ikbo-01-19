@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Objects;
+
 public class InternetOrder extends OrderManager {
     private HashMap<String, Order> orders;
 
@@ -38,6 +42,6 @@ public class InternetOrder extends OrderManager {
     }
 
     public void getOrders() {
-        orders.entrySet().forEach(el -> System.out.println(el.getKey() + ": " + Arrays.toString(el.getValue().getSortedArray())));
+        orders.entrySet().forEach(el -> System.out.println(el.getKey() + ": " + Arrays.toString(el.getValue().sortedItemsByCostDesc())));
     }
 }

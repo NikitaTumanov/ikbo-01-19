@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Collection;
 
-public class MyLinkedList<T> {
+public class MyList<T> {
     private static class Node<T> {
         T element;
         Node<T> next;
@@ -19,9 +19,9 @@ public class MyLinkedList<T> {
     private Node<T> first;
     private Node<T> last;
 
-    public MyLinkedList() {}
+    public MyList() {}
 
-    public MyLinkedList(Collection<? extends T> collection) {
+    public MyList(Collection<? extends T> collection) {
         addAll(collection);
     }
 
@@ -96,16 +96,7 @@ public class MyLinkedList<T> {
             throw new IndexOutOfBoundsException();
     }
 
-    private void linkFirst(T element) {
-        Node<T> first = this.first;
-        Node<T> newNode = new Node<>(null, element, first);
-        this.first = newNode;
-        if (first == null)
-            last = newNode;
-        else
-            first.prev = newNode;
-        size++;
-    }
+
 
     private void linkLast(T element) {
         Node<T> last = this.last;
@@ -115,17 +106,6 @@ public class MyLinkedList<T> {
             first = newNode;
         else
             last.next = newNode;
-        size++;
-    }
-
-    void linkBefore(T element, Node<T> node) {
-        Node<T> pred = node.prev;
-        Node<T> newNode = new Node<>(pred, element, node);
-        node.prev = newNode;
-        if (pred == null)
-            first = newNode;
-        else
-            pred.next = newNode;
         size++;
     }
 
@@ -161,13 +141,19 @@ public class MyLinkedList<T> {
         }
         return node;
     }
-
+    public String[] getNames (){
+        String[] result = new String[size];
+        int i = 0;
+        for (Node<Item> x = (Node<Item>) first; x != null; x = x.next)
+            result[i++] = x.element.getName();
+        return  result;
+    }
     @SuppressWarnings("unchecked")
-    public T[] toArray() {
-        Object[] result = new Object[size];
+    public Item[] toArray() {
+        Item[] result = new Item[size];
         int i = 0;
         for (Node<T> x = first; x != null; x = x.next)
-            result[i++] = x.element;
-        return (T[]) result;
+            result[i++] = (Item) x.element;
+        return  result;
     }
 }

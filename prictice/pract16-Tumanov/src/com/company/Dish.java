@@ -1,7 +1,7 @@
 package com.company;
 
-final public class Dish implements Item {
-    final private double price;
+final class Dish implements Item {
+    final private int price;
     final private String name;
     final private String description;
 
@@ -11,7 +11,7 @@ final public class Dish implements Item {
         this.price = 0;
     }
 
-    public Dish(double price, String name, String description) {
+    public Dish(int price, String name, String description) {
         this.price = price;
         this.name = name;
         this.description = description;
